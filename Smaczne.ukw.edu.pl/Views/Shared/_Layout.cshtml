@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" asp-href-include="lib/bootstrap/dist/**/*min.css" asp-fallback-href-exclude="**/*-reboot*.**/*-grid*" />
     <link rel="stylesheet" asp-href-include="/lib/font-awesome/css/*.css" />
-    <link rel="stylesheet" href="~/lib/css/site.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
     <title>SportStore</title>
 </head>
 <body>
@@ -14,7 +14,6 @@
         <div class="row text-white">
             <div class="bg-dark col-12">
                 <a class="" asp-action="List" asp-controller="Product" asp-route-category=""><img src="~/img/logo.png" style="height: 70px" /></a>
-                <i id="ShowTopMenu" class="fa fa-bars fa-2x ml-3 text-secondary" style="display: none" aria-hidden="true"></i>
                 @await Component.InvokeAsync("CartSummary")
             </div>
         </div>
