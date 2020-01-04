@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" asp-href-include="lib/bootstrap/dist/**/*min.css" asp-fallback-href-exclude="**/*-reboot*.**/*-grid*" />
     <link rel="stylesheet" asp-href-include="/lib/font-awesome/css/*.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-    <title>Smaczne.ukw.edu.pl</title>
+    <link rel="stylesheet" href="~/lib/css/site.css" />
+    <title>SportStore</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -17,9 +17,6 @@
                 <i id="ShowTopMenu" class="fa fa-bars fa-2x ml-3 text-secondary" style="display: none" aria-hidden="true"></i>
                 @await Component.InvokeAsync("CartSummary")
             </div>
-            @*<div id="TopMenu" class="bg-dark w-100 pl-3" style="display: none">
-                @await Component.InvokeAsync("NavigationMenu")
-            </div>*@
         </div>
         <div class="row bg-dark" style="min-height: 100% !important;height: 100% !important; ">
             <div id="Menu" class="text-center bg-dark" style="width: 175px">

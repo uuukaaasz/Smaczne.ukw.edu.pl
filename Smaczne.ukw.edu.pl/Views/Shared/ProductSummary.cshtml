@@ -1,6 +1,7 @@
 ﻿@model Product
-<div class="card m-1 text-center" style="min-width: 23%; max-width: 23%;">
-    <div class="pr-3 pt-3 float-right">
+
+<div class="card" style="">
+    <div class="pr-3 pt-3">
         <form id="@Model.ProductID" asp-action="AddToCart" asp-controller="Cart" method="post">
             <input type="hidden" asp-for="ProductID" />
             <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
@@ -12,11 +13,31 @@
             </span>
         </form>
     </div>
-    <img src="..." class="card-img-top" alt="...">
+    <div class="text-center pb-2" style="height: 150px;">
+        <div class="text-center" style="display: block;height:150px; width: 150px; margin: auto">
+            @if (Model.ProductID == 1)
+            {
+                <img src="~/img/kajak.png" class="card-img-top" style="height:150px" alt="...">
+            }
+            @if (Model.ProductID == 2)
+            {
+                <img src="~/img/kamizelka.png" class="card-img-top" style="height:150px" alt="...">
+            }
+            @if (Model.ProductID == 3)
+            {
+                <img src="~/img/pilka.png" class="card-img-top" style="height:150px" alt="...">
+            }
+            @if (Model.ProductID == 4)
+            {
+                <img src="~/img/stadion.png" class="card-img-top" style="height:150px" alt="...">
+            }
+        </div>
+    </div>
+
     <div class="text-center">
         <strong>@Model.Name</strong>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="height: 100px; overflow: hidden">
         <p class="card-text">@Model.Description</p>
     </div>
     <div>
