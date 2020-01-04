@@ -11,11 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Components\" />
-    <Folder Include="Infrastructure\" />
-    <Folder Include="Views\" />
   </ItemGroup>
 
 </Project>

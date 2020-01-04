@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html style="height: 100%;">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" asp-href-include="lib/bootstrap/dist/**/*min.css" asp-fallback-href-exclude="**/*-reboot*.**/*-grid*" />
+    <link rel="stylesheet" asp-href-include="/lib/font-awesome/css/*.css" />
+    <link rel="stylesheet" href="~/lib/css/site.css" />
+    <title>SportStore</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row text-white">
+            @*<div class="bg-dark col-12">
+                <a class="" asp-action="List" asp-controller="Product" asp-route-category=""><img src="~/img/logo.png" style="height: 70px" /></a>
+                <i id="ShowTopMenu" class="fa fa-bars fa-2x ml-3 text-secondary" style="display: none" aria-hidden="true"></i>
+                @await Component.InvokeAsync("CartSummary")
+            </div>*@
+            @*<div id="TopMenu" class="bg-dark w-100 pl-3" style="display: none">
+                @await Component.InvokeAsync("NavigationMenu")
+            </div>*@
+        </div>
+        <div class="row bg-dark" style="min-height: 100% !important;height: 100% !important; ">
+            <div id="Menu" class="text-center bg-dark" style="width: 175px">
+                @await Component.InvokeAsync("NavigationMenu")
+            </div>
+            <div id="Content" class="bg-secondary col" style="padding: 0 !important; margin: 0 !important;">
+                <div class="" style="height: 96%">
+                    @RenderBody()
+                </div>
+                <div class="bg-dark text-white p-1" style="height: 4%">
+                    UKW 2019
+                </div>
+            </div>
+        </div>
+    </div>
+    <environment include="Development">
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="~/lib/jquery/jquery.min.js"></script>
+        <script src="~/js/JavaScript.js"></script>
+    </environment>
+</body>
+</html>
