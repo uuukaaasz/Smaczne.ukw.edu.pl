@@ -1,0 +1,21 @@
+﻿@model IEnumerable<string>
+<div class="mt-3 bg-dark text-secondary pr-2">
+
+    <a class="mb-1" style="text-decoration:none; color: #bebebe; font-size: 20px" asp-action="List" asp-controller="Product" asp-route-category="">
+        Strona główna
+    </a>
+    <div class=" text-left">
+        <ul class="pt-3" style="font-size: 16px; list-style-type: none">
+            @foreach (string category in Model)
+            {
+                <li>
+                    <a class="mb-1" asp-action="List" asp-controller="Product"
+                       asp-route-category="@category" asp-route-productPage="1" style="text-decoration:none; color: #bebebe">
+                        @category
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+@*@(category == ViewBag.SelectedCategory ? "btn-primary" : "btn-secondary")*@
