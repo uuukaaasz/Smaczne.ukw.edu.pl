@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Smaczne.ukw.edu.pl.Models.ViewModels
 {
-    public class CartIndexModel
+    public class CartIndexViewModel
     {
         public Cart Cart { get; set; }
         public string ReturnUrl { get; set; }

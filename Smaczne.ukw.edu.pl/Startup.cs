@@ -24,9 +24,9 @@ namespace Smaczne.ukw.edu.pl
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
                 Configuration["Data:Smaczne.ukw.edu.plProducts:ConnectionString"]));
             services.AddTransient<IProductRepository, EFProductRepository>();
-            //services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
+            services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            //services.AddTransient<IOrderRepository, EFOrderRepository>();
+            services.AddTransient<IOrderRepository, EFOrderRepository>();
             services.AddMvc();
             services.AddMemoryCache();
             services.AddSession();
@@ -59,7 +59,7 @@ namespace Smaczne.ukw.edu.pl
 
                 routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
             });
-            SeedData.EnsurePopulated(app);
+            //SeedData.EnsurePopulated(app);
         }
     }
 }
