@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Smaczne.ukw.edu.pl.Models
 {
-    public class IProductRepository
+    public interface IProductRepository
     {
         IQueryable<Product> Products { get; }
         void SaveProduct(Product product);
