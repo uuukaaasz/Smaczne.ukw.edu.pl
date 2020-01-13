@@ -19,66 +19,87 @@ namespace Smaczne.ukw.edu.pl.Models
                 context.Products.AddRange(
                     new Product
                     {
-                        Name = "Kajak  ",
-                        Description = "Łódka przeznaczona dla jednej osoby",
-                        Category = "Sporty Wodne",
-                        Price = 275
+                        Name = "Hawajska",
+                        Description = "sos pomidorowy, ser, szynka, ananas",
+                        Category = "Pizza 50cm ",
+                        Price = 39
                     },
                     new Product
                     {
-                        Name = "Kamizelka ratunkowe",
-                        Description = "Chroni i dodaje uroku",
-                        Category = "Sporty Wodne",
-                        Price = 48.95m
+                        Name = "Milano",
+                        Description = "sos pomidorowy, ser mozzarella, kiełbasa chorizo, cebula, papryka, jalapeno",
+                        Category = "Pizza 50 cm ",
+                        Price = 32
                     },
                     new Product
                     {
-                        Name = "Piłka",
-                        Description = "Zatwierdzone przez FIFA rozmiar i waga",
-                        Category = "Piłka nożna",
-                        Price = 19.50m
+                        Name = "Prosciutto",
+                        Description = "sos pomidorowy, ser, szynka szwarcwaldzka, pomidor koktajlowy, rukola, płatki sera twardego",
+                        Category = "Pizza 50 cm",
+                        Price = 34
                     },
                     new Product
                     {
-                        Name = "Flagi narożne",
-                        Description = "Nadadzą twojemu boisku profesjonalny wygląd",
-                        Category = "Piłka nożna",
-                        Price = 34.95m
+                        Name = "Pierogi Bigosowe 6 szt",
+                        Description = "Pierogi z bigosem",
+                        Category = "Kuchnia polska",
+                        Price = 22
                     },
                     new Product
                     {
-                        Name = "Stadion",
-                        Description = "Składany stadion na 35000 osób",
-                        Category = "Piłka nożna",
-                        Price = 79500
+                        Name = "Pierogi Ruskie 6 szt",
+                        Description = "Pierogi ruskie (ziemniaki, twaróg, cebula ",
+                        Category = "Kuchnia polska",
+                        Price = 19
                     },
                     new Product
                     {
-                        Name = "Czapka",
-                        Description = "Zwieksza efektywność mózgu o 75%",
-                        Category = "Szachy",
+                        Name = "Pierogi z serem 6 szt",
+                        Description = "Pierogi z serem twarogowym na słodko",
+                        Category = "Kuchnia Polska",
                         Price = 16
                     },
                     new Product
                     {
-                        Name = "Niestabilne krzesło",
-                        Description = "Zmniejsza szanse przeciwnika",
-                        Category = "Szachy",
-                        Price = 29.95m
+                        Name = "Pomidorówka",
+                        Description = "Zupa z pomidorów, 450 ml",
+                        Category = "Zupy",
+                        Price = 9
                     },
                     new Product
                     {
-                        Name = "Ludzka szachownica",
-                        Description = "Przyjemna gra dla całej rodziny!",
-                        Category = "Szachy",
-                        Price = 75
+                        Name = "Rosół",
+                        Description = "Zupa z kury, 450 ml",
+                        Category = "Zupy",
+                        Price = 6
                     },
                     new Product
                     {
-                        Name = "Błyszczący krół",
-                        Description = "Figura pokryta złotem i wysadzana diamentami",
-                        Category = "Szachy",
-                        Price = 1200
+                        Name = "Barszcz",
+                        Description = "Zupa z buraków, 450 ml",
+                        Category = "Zupy",
+                        Price = 10
+                    },
+                    new Product
+                    {
+                        Name = "Zestaw 19 szt",
+                        Description = "hosomaki łosoś, krewetki w tempurze oraz 1 rolka do wyboru ",
+                        Category = "Sushi",
+                        Price = 37
+                    },
+                    new Product
+                    {
+                        Name = "Zestaw 40 szt",
+                        Description = "futomaki: dorada tempura i wege w tempurze, hosomaki: łosoś, tuńczyk, łosoś pieczony, krewetka, surimi, ogórek, +2 wybrane rolki ",
+                        Category = "Sushi",
+                        Price = 59
+                    },
+                    new Product
+                    {
+                        Name = "Zestaw 78 szt",
+                        Description = "hosomaki: łosoś, tuńczyk, łosoś pieczony, krewetka, surimi, ogórek, oshinko tempura oraz california dorada tempura + 2 wybrane rolki ",
+                        Category = "Sushi",
+                        Price = 79
                     }
                 );
                 context.SaveChanges();
